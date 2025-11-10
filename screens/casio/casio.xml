@@ -1,0 +1,33 @@
+<screen>
+	<styles>
+		<style name="style_main" bg_color="0x000000" text_color="0x000000" text_font="Segment_100" />
+		<style name="style_dot" width="6" height="6" bg_color="0x000000" radius="3" border_width="0" pad_all="0" />
+	</styles>
+	<view>
+		<style name="style_main" />
+		<lv_image src="img_casio_bg" align="center" />
+		<lv_label bind_text="subject_date" style_text_font="Segment_40" align="top_mid" y="180" />
+		<lv_label
+			bind_text="subject_hour"
+			bind_text-fmt="%02d"
+			style_text_font="Segment_100"
+			align="right_mid"
+			y="30"
+			x="-215"
+		/>
+		<lv_label
+			bind_text="subject_minute"
+			bind_text-fmt="%02d"
+			style_text_font="Segment_100"
+			align="left_mid"
+			y="30"
+			x="215"
+		/>
+		<lv_obj align="center" y="15">
+			<style name="style_dot" />
+		</lv_obj>
+		<lv_obj align="center" y="40">
+			<style name="style_dot" />
+		</lv_obj>
+	</view>
+</screen>

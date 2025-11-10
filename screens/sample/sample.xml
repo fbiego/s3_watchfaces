@@ -1,0 +1,30 @@
+<screen>
+	<styles>
+		<style name="style_main" bg_color="0x000000" />
+		<style
+			name="style_cont"
+			bg_color="0x000000"
+			radius="0"
+			border_width="0"
+			bg_opa="0"
+			text_color="0xffff00"
+			text_font="NS_Bold_60"
+			layout="flex"
+			pad_column="0"
+			width="content"
+			height="content"
+		/>
+	</styles>
+	<view>
+		<style name="style_main" />
+
+		<lv_obj align="top_mid" y="180">
+			<style name="style_cont" />
+			<lv_label bind_text="subject_hour" bind_text-fmt="%02d" />
+			<lv_label text=":" />
+			<lv_label bind_text="subject_minute" bind_text-fmt="%02d" />
+			<lv_label text=":" />
+			<lv_label bind_text="subject_seconds" bind_text-fmt="%02d" />
+		</lv_obj>
+	</view>
+</screen>

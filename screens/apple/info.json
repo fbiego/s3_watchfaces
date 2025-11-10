@@ -1,0 +1,10 @@
+{
+    "name": "Ultra",
+    "desc": "apple",
+    "main": "apple.xml",
+    "fonts": [],
+    "images": [
+        "img_ultra_bg.bin"
+    ],
+    "preview": "preview.bin"
+}

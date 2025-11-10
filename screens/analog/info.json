@@ -1,0 +1,8 @@
+{
+    "name": "Analog",
+    "desc": "analog",
+    "main": "analog.xml",
+    "fonts": [],
+    "images": [],
+    "preview": "preview.bin"
+}

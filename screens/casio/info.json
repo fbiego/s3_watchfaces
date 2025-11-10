@@ -1,0 +1,13 @@
+{
+    "name": "Casio",
+    "desc": "casio",
+    "main": "casio.xml",
+    "fonts": [
+        "Segment_100",
+        "Segment_40"
+    ],
+    "images": [
+        "img_casio_bg.bin"
+    ],
+    "preview": "preview.bin"
+}

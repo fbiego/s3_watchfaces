@@ -1,0 +1,101 @@
+<globals>
+	<api>
+		<!-- Add <enumdefs> here -->
+	</api>
+
+	<consts>
+		<!-- Add <px>, <int>, <color> etc here -->
+	</consts>
+
+	<styles>
+		<!-- Add <style> tags here -->
+	</styles>
+
+	<subjects>
+		<!-- Add <int>, <string>, or <float> subjects here -->
+		<string name="subject_time" value="12:45" />
+		<string name="subject_date" value="Sun 5 Oct" />
+		<int name="subject_hour" value="12" />
+		<int name="subject_minute" value="45" />
+		<int name="subject_seconds" value="23" />
+		<int name="subject_hour_analog" value="3150" />
+		<int name="subject_minute_analog" value="450" />
+		<int name="subject_seconds_analog" value="1800" />
+		<string name="subject_am_pm" value="AM" />
+		<int name="subject_day" value="5" />
+		<int name="subject_month" value="10" />
+		<int name="subject_year" value="2025" />
+		<string name="subject_month_short" value="Oct" />
+		<string name="subject_month_long" value="October" />
+		<int name="subject_weekday" value="0" />
+		<string name="subject_weekday_short" value="Sun" />
+		<string name="subject_weekday_long" value="Sunday" />
+
+		<int name="subject_battery" value="83" />
+		<int name="subject_steps" value="1234" />
+		<int name="subject_voltage" value="3869" />
+		<int name="subject_brightness" value="150" />
+		<string name="subject_info" value="None" />
+
+		<string name="subject_esp_time" value="14:55:02" />
+		<string name="subject_rtc_time" value="09:55:02\nMon 3 Nov" />
+	</subjects>
+
+	<images>
+		<!-- Add <file> or <data> tags here -->
+		<data name="img_preview" src_path="images/core/preview.png" color_format="rgb565" />
+
+		<data name="img_casio_bg" src_path="images/img_casio_bg.png" color_format="rgb565" />
+		<data name="img_ultra_bg" src_path="images/img_ultra_bg.png" color_format="rgb565" />
+	</images>
+
+	<fonts>
+		<!-- Add <bin> , <tiny_ttf>, <freetype> tags here -->
+		<bin
+			name="NS_Regular_20"
+			size="20"
+			src_path="fonts/core/NotoSans-Regular.ttf"
+			bpp="2"
+			range="0x20-0x7F"
+			as_file="false"
+			symbols="°·"
+		/>
+		<bin
+			name="NS_Regular_30"
+			size="30"
+			src_path="fonts/core/NotoSans-Regular.ttf"
+			bpp="2"
+			range="0x20-0x7F"
+			as_file="false"
+			symbols="°·"
+		/>
+		<bin
+			name="NS_Bold_40"
+			size="40"
+			src_path="fonts/core/NotoSans-Bold.ttf"
+			bpp="2"
+			range="0x20-0x7F"
+			as_file="false"
+			symbols="°·"
+		/>
+		<bin
+			name="NS_Bold_60"
+			size="60"
+			src_path="fonts/core/NotoSans-Bold.ttf"
+			bpp="2"
+			range="0x20-0x7F"
+			as_file="false"
+			symbols="°·"
+		/>
+
+		<bin
+			name="Segment_100"
+			size="100"
+			src_path="fonts/seven-segment.ttf"
+			bpp="2"
+			range="0x30-0x40"
+			as_file="false"
+		/>
+		<bin name="Segment_40" size="40" src_path="fonts/seven-segment.ttf" bpp="2" range="0x20-0x7F" as_file="false" />
+	</fonts>
+</globals>
