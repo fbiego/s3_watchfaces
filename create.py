@@ -290,6 +290,7 @@ def process_folder(dirpath, global_images, global_fonts, run_test = False):
     create_zip(dest_zip, zip_files)
 
     readme_json["download"] = f"https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/{folder_rel_path}/{folder_rel_path}.zip"
+    readme_json["image"] = f"https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/{readme_json["preview"]}"
 
     return readme_json
     

@@ -8,25 +8,29 @@
             "preview": "apple/screen.png",
             "name": "Ultra",
             "desc": "apple",
-            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/apple/apple.zip"
+            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/apple/apple.zip",
+            "image": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/apple/screen.png"
         },
         {
             "preview": "analog/screen.png",
             "name": "Analog",
             "desc": "analog",
-            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/analog/analog.zip"
+            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/analog/analog.zip",
+            "image": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/analog/screen.png"
         },
         {
             "preview": "sample/screen.png",
             "name": "Sample",
             "desc": "sample",
-            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/sample/sample.zip"
+            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/sample/sample.zip",
+            "image": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/sample/screen.png"
         },
         {
             "preview": "casio/screen.png",
             "name": "Casio",
             "desc": "casio",
-            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/casio/casio.zip"
+            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/casio/casio.zip",
+            "image": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/casio/screen.png"
         }
     ]
 }
