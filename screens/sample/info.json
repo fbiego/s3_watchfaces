@@ -3,8 +3,6 @@
     "desc": "sample",
     "main": "sample.xml",
     "fonts": [],
-    "images": [
-        "img_ultra_bg.bin"
-    ],
+    "images": [],
     "preview": "preview.bin"
 }

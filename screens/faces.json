@@ -1,0 +1,32 @@
+{
+    "name": "s3_watchfaces",
+    "description": "A collection of xml watchfaces for Waveshare ESP32-S3.",
+    "width": 410,
+    "height": 502,
+    "faces": [
+        {
+            "preview": "apple/screen.png",
+            "name": "Ultra",
+            "desc": "apple",
+            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/apple/apple.zip"
+        },
+        {
+            "preview": "analog/screen.png",
+            "name": "Analog",
+            "desc": "analog",
+            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/analog/analog.zip"
+        },
+        {
+            "preview": "sample/screen.png",
+            "name": "Sample",
+            "desc": "sample",
+            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/sample/sample.zip"
+        },
+        {
+            "preview": "casio/screen.png",
+            "name": "Casio",
+            "desc": "casio",
+            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/casio/casio.zip"
+        }
+    ]
+}

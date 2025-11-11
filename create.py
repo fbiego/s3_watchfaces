@@ -266,11 +266,13 @@ def process_folder(dirpath, global_images, global_fonts, run_test = False):
     screen_png = os.path.join(dirpath, "screen.png")
     preview_png = os.path.join(dirpath, "preview.png")
     if os.path.exists(screen_png):
+        readme_json["preview"] = f"{folder_rel_path}/screen.png"
         process_preview(screen_png, preview_png)
 
     # Convert preview.png if exists
     if os.path.exists(preview_png):
-        readme_json["preview"] = f"{folder_rel_path}/preview.png"
+        if not os.path.exists(screen_png):
+            readme_json["preview"] = f"{folder_rel_path}/preview.png"
         preview_bin = os.path.join(dirpath, "preview.bin")
         convert_image(preview_png, preview_bin, True)
         info_data["preview"] = f"preview.bin"
@@ -295,6 +297,13 @@ def process_folder(dirpath, global_images, global_fonts, run_test = False):
 def scan_screens(global_images, global_fonts, run_test = False):
     """Recursively walk /screens/ and process each subfolder."""
     """Create the README.md file with the watchfaces"""
+
+    faces_json = {}
+    faces_json["name"] = "s3_watchfaces"
+    faces_json["description"] = "A collection of xml watchfaces for Waveshare ESP32-S3."
+    faces_json["width"] = 410
+    faces_json["height"] = 502
+    faces_list = []
     readme = """## Watchfaces
 
 | Preview               |  Name               |
@@ -304,9 +313,14 @@ def scan_screens(global_images, global_fonts, run_test = False):
         face = process_folder(dirpath, global_images, global_fonts, run_test)
         if face:
             readme += f'| ![{face["name"]}]({face["preview"]}?raw=true "{face["name"]}") | [**{face["name"]}**]({face["download"]}) |\n'
+            faces_list.append(face)
    
     with open("screens/README.md", "w") as rd:
         rd.write(readme)
+    
+    faces_json["faces"] = faces_list
+    with open("screens/faces.json", "w") as rj:
+        json.dump(faces_json, rj, indent=4)
 
 
 def generate_compile_project():
