@@ -1,0 +1,19 @@
+<screen>
+	<styles>
+		<style name="style_main" bg_color="0x000000" text_color="0xffffff" text_font="NS_Bold_60" />
+	</styles>
+	<view>
+		<style name="style_main" />
+		<lv_label bind_text="subject_time" align="top_mid" y="100" />
+		<lv_label bind_text="subject_date" align="top_mid" y="170" style_text_font="NS_Bold_40" />
+
+		<lv_label
+			bind_text="subject_brightness"
+			bind_text-fmt="Brightness %d"
+			style_text_font="NS_Regular_20"
+			align="bottom_mid"
+			y="-70"
+		/>
+		<lv_slider bind_value="subject_brightness" align="bottom_mid" y="-50" min_value="1" max_value="255" />
+	</view>
+</screen>

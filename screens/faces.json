@@ -26,6 +26,13 @@
             "image": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/sample/screen.png"
         },
         {
+            "preview": "control/screen.png",
+            "name": "Control",
+            "desc": "control",
+            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/control/control.zip",
+            "image": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/control/screen.png"
+        },
+        {
             "preview": "casio/screen.png",
             "name": "Casio",
             "desc": "casio",

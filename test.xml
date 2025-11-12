@@ -1,6 +1,6 @@
 <test>
-	<view extends="sample" />
+	<view extends="control" />
 	<steps>
-		<screenshot_compare path="screens/sample/screen.png" />
+		<screenshot_compare path="screens/control/screen.png" />
 	</steps>
 </test>

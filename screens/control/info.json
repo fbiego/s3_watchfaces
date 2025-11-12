@@ -1,0 +1,8 @@
+{
+    "name": "Control",
+    "desc": "control",
+    "main": "control.xml",
+    "fonts": [],
+    "images": [],
+    "preview": "preview.bin"
+}
