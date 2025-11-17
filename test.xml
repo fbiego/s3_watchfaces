@@ -1,6 +1,6 @@
 <test>
-	<view extends="control" />
+	<view extends="casio" />
 	<steps>
-		<screenshot_compare path="screens/control/screen.png" />
+		<screenshot_compare path="screens/casio/screen.png" />
 	</steps>
 </test>

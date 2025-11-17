@@ -1,0 +1,10 @@
+{
+    "name": "Eyes",
+    "desc": "eyes",
+    "main": "eyes.xml",
+    "fonts": [],
+    "images": [
+        "img_eyes.bin"
+    ],
+    "preview": "preview.bin"
+}

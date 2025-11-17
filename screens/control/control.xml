@@ -15,5 +15,7 @@
 			y="-70"
 		/>
 		<lv_slider bind_value="subject_brightness" align="bottom_mid" y="-50" min_value="1" max_value="255" />
+
+		<lv_animimg />
 	</view>
 </screen>

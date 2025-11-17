@@ -47,6 +47,8 @@
 
 		<data name="img_casio_bg" src_path="images/img_casio_bg.png" color_format="rgb565" />
 		<data name="img_ultra_bg" src_path="images/img_ultra_bg.png" color_format="rgb565" />
+
+		<data name="img_eyes" src_path="images/img_eyes.png" color_format="rgb565" />
 	</images>
 
 	<fonts>

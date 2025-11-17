@@ -66,6 +66,7 @@ extern lv_font_t * Segment_40;
 extern const void * img_preview;
 extern const void * img_casio_bg;
 extern const void * img_ultra_bg;
+extern const void * img_eyes;
 
 /*----------------
  * Subjects
@@ -124,6 +125,8 @@ void s3_watchfaces_init_gen(const char * asset_path);
 #include "screens/analog/analog_gen.h"
 #include "screens/apple/apple_gen.h"
 #include "screens/casio/casio_gen.h"
+#include "screens/control/control_gen.h"
+#include "screens/eyes/eyes_gen.h"
 #include "screens/sample/sample_gen.h"
 
 #ifdef __cplusplus

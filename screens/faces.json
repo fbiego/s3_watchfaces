@@ -26,6 +26,13 @@
             "image": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/sample/screen.png"
         },
         {
+            "preview": "eyes/screen.png",
+            "name": "Eyes",
+            "desc": "eyes",
+            "download": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/eyes/eyes.zip",
+            "image": "https://github.com/fbiego/s3_watchfaces/raw/refs/heads/master/screens/eyes/screen.png"
+        },
+        {
             "preview": "control/screen.png",
             "name": "Control",
             "desc": "control",

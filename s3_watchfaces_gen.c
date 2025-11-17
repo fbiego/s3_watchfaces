@@ -58,9 +58,7 @@ extern lv_font_t NS_Bold_40_data;
 lv_font_t * NS_Bold_60;
 extern lv_font_t NS_Bold_60_data;
 lv_font_t * Segment_100;
-extern lv_font_t Segment_100_data;
 lv_font_t * Segment_40;
-extern lv_font_t Segment_40_data;
 
 /*----------------
  * Images
@@ -72,6 +70,8 @@ const void * img_casio_bg;
 extern const void * img_casio_bg_data;
 const void * img_ultra_bg;
 extern const void * img_ultra_bg_data;
+const void * img_eyes;
+extern const void * img_eyes_data;
 
 /*----------------
  * Subjects
@@ -130,10 +130,12 @@ void s3_watchfaces_init_gen(const char * asset_path)
     NS_Bold_40 = &NS_Bold_40_data;
     /* get font 'NS_Bold_60' from a C array */
     NS_Bold_60 = &NS_Bold_60_data;
-    /* get font 'Segment_100' from a C array */
-    Segment_100 = &Segment_100_data;
-    /* get font 'Segment_40' from a C array */
-    Segment_40 = &Segment_40_data;
+    /* create bin font 'Segment_100' from file */
+    lv_snprintf(buf, 256, "%s%s", asset_path, "fonts/Segment_100");
+    Segment_100 = lv_binfont_create(buf);
+    /* create bin font 'Segment_40' from file */
+    lv_snprintf(buf, 256, "%s%s", asset_path, "fonts/Segment_40");
+    Segment_40 = lv_binfont_create(buf);
 
 
     /*----------------
@@ -142,6 +144,7 @@ void s3_watchfaces_init_gen(const char * asset_path)
     img_preview = &img_preview_data;
     img_casio_bg = &img_casio_bg_data;
     img_ultra_bg = &img_ultra_bg_data;
+    img_eyes = &img_eyes_data;
 
     /*----------------
      * Subjects
@@ -238,7 +241,7 @@ void s3_watchfaces_init_gen(const char * asset_path)
                            subject_rtc_time_buf,
                            subject_rtc_time_prev_buf,
                            UI_SUBJECT_STRING_LENGTH,
-                           "09:55:02\nMon 3 Nov"
+                           "09:55:02\\nMon 3 Nov"
                           );
 
     /*----------------
@@ -294,6 +297,7 @@ void s3_watchfaces_init_gen(const char * asset_path)
     lv_xml_register_image(NULL, "img_preview", img_preview);
     lv_xml_register_image(NULL, "img_casio_bg", img_casio_bg);
     lv_xml_register_image(NULL, "img_ultra_bg", img_ultra_bg);
+    lv_xml_register_image(NULL, "img_eyes", img_eyes);
 #endif
 
 #if LV_USE_XML == 0

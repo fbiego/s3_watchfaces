@@ -42,7 +42,6 @@ lv_obj_t * sample_create(void)
     if (!style_inited) {
         lv_style_init(&style_main);
         lv_style_set_bg_color(&style_main, lv_color_hex(0x000000));
-        lv_style_set_bg_image_src(&style_main, img_casio_bg);
 
         lv_style_init(&style_cont);
         lv_style_set_bg_color(&style_cont, lv_color_hex(0x000000));
@@ -61,12 +60,11 @@ lv_obj_t * sample_create(void)
 
     lv_obj_t * lv_obj_0 = lv_obj_create(NULL);
     lv_obj_set_name_static(lv_obj_0, "sample_#");
-    lv_obj_set_style_bg_image_src(lv_obj_0, img_ultra_bg, 0);
 
     lv_obj_add_style(lv_obj_0, &style_main, 0);
     lv_obj_t * lv_obj_1 = lv_obj_create(lv_obj_0);
     lv_obj_set_align(lv_obj_1, LV_ALIGN_TOP_MID);
-    lv_obj_set_y(lv_obj_1, 130);
+    lv_obj_set_y(lv_obj_1, 180);
     lv_obj_add_style(lv_obj_1, &style_cont, 0);
     lv_obj_t * lv_label_0 = lv_label_create(lv_obj_1);
     lv_label_bind_text(lv_label_0, &subject_hour, "%02d");

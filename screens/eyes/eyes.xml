@@ -1,0 +1,10 @@
+<screen>
+	<styles>
+		<style name="style_main" bg_color="0x000000" text_color="0xf60b0b" text_font="NS_Bold_60" />
+	</styles>
+	<view>
+		<style name="style_main" />
+		<lv_image src="img_eyes" align="top_mid" y="135" x="0" />
+		<lv_label align="top_mid" y="271" bind_text="subject_time" />
+	</view>
+</screen>

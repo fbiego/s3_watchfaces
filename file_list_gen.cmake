@@ -10,6 +10,8 @@ list(
   ${CMAKE_CURRENT_LIST_DIR}/screens/analog/analog_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/apple/apple_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/casio/casio_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/control/control_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/eyes/eyes_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/sample/sample_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/s3_watchfaces_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/s3_watchfaces.c
@@ -17,8 +19,7 @@ list(
   ${CMAKE_CURRENT_LIST_DIR}/fonts/NS_Regular_30_data.c
   ${CMAKE_CURRENT_LIST_DIR}/fonts/NS_Bold_40_data.c
   ${CMAKE_CURRENT_LIST_DIR}/fonts/NS_Bold_60_data.c
-  ${CMAKE_CURRENT_LIST_DIR}/fonts/Segment_100_data.c
-  ${CMAKE_CURRENT_LIST_DIR}/fonts/Segment_40_data.c
   ${CMAKE_CURRENT_LIST_DIR}/images/img_preview_data.c
   ${CMAKE_CURRENT_LIST_DIR}/images/img_casio_bg_data.c
-  ${CMAKE_CURRENT_LIST_DIR}/images/img_ultra_bg_data.c)
+  ${CMAKE_CURRENT_LIST_DIR}/images/img_ultra_bg_data.c
+  ${CMAKE_CURRENT_LIST_DIR}/images/img_eyes_data.c)
