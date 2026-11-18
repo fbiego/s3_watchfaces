@@ -1,0 +1,41 @@
+<screen>
+    <styles>
+        <style name="style_main" bg_color="0x000000" text_color="0xf20a18" text_font="NS_Bold_40" />
+        <style name="style_card" width="58" height="58" bg_color="0x080808" radius="29" border_width="2" border_color="0x8f0710" pad_all="0" />
+    </styles>
+    <view>
+        <style name="style_main" />
+
+        <lv_label text="NIGHTWATCH" align="top_mid" y="12" style_text_font="NS_Regular_20" />
+
+        <lv_obj align="top_left" x="22" y="43">
+            <style name="style_card" />
+        </lv_obj>
+        <lv_obj align="top_mid" x="0" y="43">
+            <style name="style_card" />
+        </lv_obj>
+        <lv_obj align="top_right" x="-22" y="43">
+            <style name="style_card" />
+        </lv_obj>
+
+        <lv_label text="BAT" align="top_left" x="33" y="53" style_text_font="NS_Regular_20" />
+        <lv_label bind_text="subject_battery" bind_text-fmt="%d%%" align="top_left" x="30" y="75" style_text_font="NS_Bold_40" />
+        <lv_label text="STEPS" align="top_mid" y="53" style_text_font="NS_Regular_20" />
+        <lv_label bind_text="subject_steps" align="top_mid" y="75" style_text_font="NS_Bold_40" />
+        <lv_label text="mV" align="top_right" x="-31" y="53" style_text_font="NS_Regular_20" />
+        <lv_label bind_text="subject_voltage" align="top_right" x="-27" y="75" style_text_font="NS_Bold_40" />
+
+        <lv_label bind_text="subject_time" align="top_mid" y="119" style_text_font="NS_Bold_60" />
+        <lv_label bind_text="subject_date" align="top_mid" y="174" style_text_font="NS_Regular_20" />
+
+        <lv_obj align="center" y="32">
+            <style name="style_card" />
+        </lv_obj>
+        <lv_label text="N" align="center" y="7" style_text_font="NS_Regular_20" />
+        <lv_label text="NW" align="center" y="30" style_text_font="NS_Bold_40" />
+        <lv_label text="COMPASS DEMO" align="center" y="53" style_text_font="NS_Regular_20" />
+
+        <lv_label text="N        E        S        W" align="bottom_mid" y="-24" style_text_font="NS_Regular_20" />
+        <lv_label text="RED / BLACK  •  ESP32-S3" align="bottom_mid" y="-5" style_text_font="NS_Regular_20" />
+    </view>
+</screen>

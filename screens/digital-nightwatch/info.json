@@ -1,0 +1,7 @@
+{
+    "name": "Nightwatch",
+    "desc": "Red-on-black 240x320 digital watchface",
+    "main": "nightwatch.xml",
+    "fonts": [],
+    "images": []
+}

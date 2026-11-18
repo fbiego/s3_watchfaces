@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="320" viewBox="0 0 240 320" role="img" aria-labelledby="title desc">
+  <title id="title">Nightwatch 240 by 320 preview</title>
+  <desc id="desc">Black rounded watch display with red time, battery, steps, voltage, and a compass demo indicator.</desc>
+  <defs>
+    <linearGradient id="backdrop" x2="1" y2="1"><stop stop-color="#b123c5"/><stop offset="1" stop-color="#263da8"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="240" height="320" fill="url(#backdrop)"/>
+  <rect x="18" y="4" width="204" height="312" rx="36" fill="#000" stroke="#180207" stroke-width="2"/>
+  <g fill="#f20a18" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="120" y="32" font-size="13" letter-spacing="2">NIGHTWATCH</text>
+  </g>
+  <g fill="#080808" stroke="#8f0710" stroke-width="2">
+    <circle cx="51" cy="72" r="27"/><circle cx="120" cy="72" r="27"/><circle cx="189" cy="72" r="27"/>
+  </g>
+  <g fill="#f20a18" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="51" y="66" font-size="10">BAT</text><text x="51" y="88" font-size="15" font-weight="bold">83%</text>
+    <text x="120" y="66" font-size="10">STEPS</text><text x="120" y="88" font-size="14" font-weight="bold">1234</text>
+    <text x="189" y="66" font-size="10">mV</text><text x="189" y="88" font-size="13" font-weight="bold">3869</text>
+  </g>
+  <g fill="#f20a18" font-family="Arial, sans-serif" text-anchor="middle" filter="url(#glow)">
+    <text x="120" y="151" font-size="39" font-weight="bold">12:45</text>
+  </g>
+  <text x="120" y="174" fill="#f20a18" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Sun 5 Oct</text>
+  <circle cx="120" cy="227" r="34" fill="#080808" stroke="#8f0710" stroke-width="2"/>
+  <g fill="#f20a18" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="120" y="201" font-size="12">N</text><text x="120" y="235" font-size="22" font-weight="bold">NW</text>
+    <text x="120" y="251" font-size="8" letter-spacing="1">COMPASS DEMO</text>
+    <text x="120" y="278" font-size="11">N     E     S     W</text>
+    <text x="120" y="304" font-size="9" letter-spacing="1">RED / BLACK  •  ESP32-S3</text>
+  </g>
+</svg>
